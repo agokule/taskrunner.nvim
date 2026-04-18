@@ -24,7 +24,7 @@ https://github.com/user-attachments/assets/9f0c9f2f-9f06-4067-b9c8-b98e838cbf3b
 
 ```lua
 {
-    "you/taskrunner.nvim",
+    "agokule/taskrunner.nvim",
     opts = {
         -- see Configuration below
     },
