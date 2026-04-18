@@ -1,6 +1,6 @@
 # taskrunner.nvim
 
-Have you of the `:make` command in vim/neovim? Well it is basically a command
+Have you heard of the `:make` command in vim/neovim? Well it is basically a command
 that runs the compile command for your project and conviently puts any errors
 in the quickfix list. The only problem with it is that the whole Neovim screen
 freezes while its happening and you are forced to sit there and wait.
@@ -103,7 +103,7 @@ tr.chain({
 :Task npm run test
 ```
 
-### Migrating the example `.nvim.lua`
+### Example EXRC file `.nvim.lua`
 
 ```lua
 -- .nvim.lua (project-local)
@@ -130,14 +130,9 @@ local function cmake(build_type)
     })
 end
 
+-- Now you can build the project in Debug config with <leader>rb and in release mode with <leader>rB
 vim.keymap.set("n", "<leader>rb", function() cmake("Debug")   end)
 vim.keymap.set("n", "<leader>rB", function() cmake("Release") end)
-vim.keymap.set("n", "<leader>rp", function()
-    vim.cmd("botright 20sp")
-    vim.cmd.terminal("./build/Timepad")
-end)
-vim.keymap.set("n", "<leader>fm", function() vim.cmd.edit("./src/main.cpp")      end)
-vim.keymap.set("n", "<leader>fa", function() vim.cmd.edit("./src/appstate.hpp")  end)
 ```
 
 ## API Reference
