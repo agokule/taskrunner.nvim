@@ -11,8 +11,7 @@ list! Now you can continue working while the project is building!
 
 ## Demo Video
 
-
-
+https://github.com/user-attachments/assets/9f0c9f2f-9f06-4067-b9c8-b98e838cbf3b
 
 ## Requirements
 
