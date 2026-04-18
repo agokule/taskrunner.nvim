@@ -3,7 +3,7 @@
 Have you of the `:make` command in vim/neovim? Well it is basically a command
 that runs the compile command for your project and conviently puts any errors
 in the quickfix list. The only problem with it is that the whole Neovim screen
-freezes while its happening and you are forced to sit there are wait.
+freezes while its happening and you are forced to sit there and wait.
 
 But not anymore! This plugin solves that problem and allows you to run the
 compile command in the background and still get the errors in the quickfix
